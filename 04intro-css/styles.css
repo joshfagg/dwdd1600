@@ -1,0 +1,165 @@
+/* ======================================
+   Cozy Book Nook Vibes
+   Author: Josh
+   ====================================== */
+
+/* ---------- Styles ---------- */
+body {
+    font-family: "Playfair Display", serif;
+    background-color: #F5EFE6; /* Warm Cream */
+    color: #3A2F2F; /* Charcoal Brown */
+    margin: 0;
+    padding: 0;
+    line-height: 1.8;
+}
+
+/* ---------- Header ---------- */
+header {
+    text-align: center;
+    padding: 60px 20px 30px;
+}
+
+header span {
+    font-size: 3rem;
+    font-weight: 700;
+    letter-spacing: 0.5px;
+}
+
+header em {
+    display: block;
+    margin-top: 10px;
+    font-size: 1.1rem;
+    color: #7A4A3A;
+}
+
+/* ---------- Navigation ---------- */
+nav {
+    border-top: 1px solid #D8CFC4;
+    border-bottom: 1px solid #D8CFC4;
+    margin-bottom: 70px;
+}
+
+nav ul {
+    list-style: none;
+    display: flex;
+    justify-content: center;
+    gap: 50px;
+    padding: 18px 0;
+    margin: 0;
+}
+
+nav a {
+    text-decoration: none;
+    font-weight: 700;
+    font-size: 0.95rem;
+    color: #3A2F2F;
+    letter-spacing: 1px;
+    text-transform: uppercase;
+    padding: 12px;
+    min-height: 48px;
+}
+
+/* Wayfinding */
+nav a:hover,
+nav a:focus {
+    color: #C47A5A; /* Muted Terracotta */
+}
+
+/* ---------- Main ---------- */
+main {
+    max-width: 880px;      
+    margin: 0 auto;
+    padding: 0 40px;       
+}
+
+/* ---------- Headings ---------- */
+h1 {
+    font-size: 3.2rem;
+    font-weight: 700;
+    margin-bottom: 40px;
+    line-height: 1.2;
+}
+
+h2 {
+    font-size: 1.4rem;
+    font-weight: 700;
+    margin-top: 70px;
+    margin-bottom: 15px;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    color: #7A4A3A;
+}
+
+/* ---------- Paragraphs ---------- */
+p {
+    font-size: 1.05rem;
+    margin-bottom: 22px;
+}
+
+/* ---------- Lists ---------- */
+ul {
+    list-style-type: disc;
+    padding-left: 20px;
+    margin: 30px 0;
+}
+
+ul li {
+    margin-bottom: 10px;
+}
+
+ol {
+    padding-left: 20px;
+    margin: 30px 0;
+}
+
+ol li {
+    margin-bottom: 10px;
+}
+
+/* ---------- Definition List ---------- */
+dl {
+    margin: 60px 0;
+    padding-left: 25px;
+    border-left: 2px solid #8FAF9A; /* Sage Green */
+}
+
+dt {
+    font-weight: 700;
+    margin-top: 20px;
+}
+
+dd {
+    margin-left: 0;
+    margin-bottom: 15px;
+    font-size: 0.95rem;
+}
+
+/* ---------- Content Links ---------- */
+main a {
+    color: #8FAF9A;
+    font-weight: 700;
+    text-decoration: none;
+    border-bottom: 1px solid #8FAF9A;
+}
+
+main a:hover {
+    color: #C47A5A;
+    border-bottom-color: #C47A5A;
+}
+
+/* ---------- Address ---------- */
+address {
+    margin-top: 80px;
+    font-style: normal;
+    font-size: 0.9rem;
+    color: #7A4A3A;
+}
+
+/* ---------- Footer ---------- */
+footer {
+    margin-top: 100px;
+    padding: 30px;
+    text-align: center;
+    font-size: 0.85rem;
+    border-top: 1px solid #D8CFC4;
+}
