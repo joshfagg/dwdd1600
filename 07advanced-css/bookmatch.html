@@ -1,0 +1,112 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="description" content="Request a personalized book recommendation.">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+
+<title>Your Next Favorite Book | Book Match</title>
+
+<link rel="icon" type="image/x-icon" href="favicon.ico">
+
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;700&display=swap" rel="stylesheet">
+
+<link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+
+<header>
+
+<img src="images/logo.png" alt="Site logo for Your Next Favorite Book" width="80" height="80">
+
+<div>
+<span>Your Next Favorite Book</span>
+<em>Helping you discover books you’ll actually love</em>
+</div>
+
+</header>
+
+<nav>
+<ul>
+<li><a href="index.html">Home</a></li>
+<li><a href="recommendations.html">Recommendations</a></li>
+<li><a href="gallery.html">Gallery</a></li>
+<li class="active"><a href="bookmatch.html">Book Match</a></li>
+</ul>
+</nav>
+
+<main>
+
+<h1>Find Your Next Favorite Book</h1>
+
+<form method="get" action="thanks.html" class="bookform">
+
+<fieldset>
+<legend>Your Information</legend>
+
+<label>Full Name:
+<input type="text" name="fullname" required>
+</label>
+
+<label>Email Address:
+<input type="email" name="email" required>
+</label>
+
+<label>Phone Number:
+<input type="tel" name="phone" placeholder="801-555-1234">
+</label>
+
+</fieldset>
+
+<fieldset>
+
+<legend>Your Reading Preferences</legend>
+
+<p>Preferred Genre:</p>
+
+<label><input type="radio" name="genre" value="fantasy" required> Fantasy</label>
+<label><input type="radio" name="genre" value="romance"> Romance</label>
+<label><input type="radio" name="genre" value="thriller"> Thriller</label>
+
+<p>What formats do you enjoy?</p>
+
+<label><input type="checkbox" name="format" value="physical"> Physical Books</label>
+<label><input type="checkbox" name="format" value="ebook"> Ebooks</label>
+<label><input type="checkbox" name="format" value="audio"> Audiobooks</label>
+
+</fieldset>
+
+<fieldset>
+
+<legend>Reading Habits</legend>
+
+<label>How often do you read?
+<select name="frequency" required>
+<option value="">Please Select</option>
+<option value="daily">Daily</option>
+<option value="weekly">A few times a week</option>
+<option value="monthly">A few times a month</option>
+</select>
+</label>
+
+<label>Tell us what you’re in the mood for:
+<textarea name="comments" required></textarea>
+</label>
+
+</fieldset>
+
+<input type="submit" value="Get My Recommendation">
+
+</form>
+
+</main>
+
+<footer>
+<p>&copy; 2026 &bull; Your Next Favorite Book</p>
+</footer>
+
+</body>
+</html>

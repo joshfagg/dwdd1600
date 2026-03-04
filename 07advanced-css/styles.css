@@ -1,0 +1,326 @@
+/* ======================================
+   Cozy Book Nook Vibes
+   Author: Josh
+   ====================================== */
+
+/* ---------- Box Model Change ---------- */
+* {
+box-sizing: border-box;
+}
+
+/* ---------- Base Styles ---------- */
+body {
+font-family: "Playfair Display", serif;
+background-color: #F5EFE6; /* Warm Cream */
+color: #3A2F2F; /* Charcoal Brown */
+margin: 0;
+padding: 0;
+line-height: 1.8;
+}
+
+/* ---------- Limit Site Width ---------- */
+header, nav, main, footer {
+max-width: 64rem;
+margin: 0 auto;
+}
+
+/* ---------- Header ---------- */
+header {
+display: flex;
+align-items: center;
+gap: 15px;
+padding: 60px 20px 30px;
+background: linear-gradient(to right,#F5EFE6,#E9DED2); /* CSS Gradient */
+}
+
+header img {
+max-width: 80px;
+height: auto;
+}
+
+header span {
+font-size: 3rem;
+font-weight: 700;
+letter-spacing: .5px; /* editorial tweak */
+}
+
+header em {
+display: block;
+margin-top: 5px;
+font-size: 1.1rem;
+color: #7A4A3A;
+}
+
+/* ---------- Navigation ---------- */
+
+/* Small Screen Navigation */
+@media only screen and (max-width:800px){
+
+nav ul{
+margin:0;
+padding:0;
+list-style:none;
+}
+
+nav a{
+display:block;
+padding:.8rem;
+text-align:center;
+text-decoration:none;
+font-weight:700;
+color:#3A2F2F;
+border-bottom:1px solid #D8CFC4;
+min-height:48px;
+}
+
+nav .active{
+background-color:#C47A5A;
+color:white;
+}
+
+}
+
+/* Large Screen Navigation */
+@media only screen and (min-width:801px){
+
+nav{
+border-top:1px solid #D8CFC4;
+border-bottom:1px solid #D8CFC4;
+margin-bottom:70px;
+}
+
+nav ul{
+display:flex;
+list-style:none;
+padding:18px 0;
+margin:0;
+gap:50px;
+justify-content:center;
+}
+
+nav a{
+display:block;
+padding:12px;
+font-weight:700;
+font-size:.95rem;
+text-decoration:none;
+color:#3A2F2F;
+letter-spacing:1px;
+text-transform:uppercase;
+min-height:48px;
+}
+
+nav .active a{
+border-bottom:3px solid #C47A5A;
+}
+
+nav a:hover{
+color:#C47A5A;
+}
+
+}
+
+/* ---------- Main Content ---------- */
+main{
+padding:0 40px;
+}
+
+/* Headings */
+
+main h1{
+font-size:3.2rem;
+font-weight:700;
+margin-bottom:40px;
+line-height:1.2;
+}
+
+main h2{
+font-size:1.4rem;
+font-weight:700;
+margin-top:70px;
+margin-bottom:15px;
+text-transform:uppercase;
+letter-spacing:1px;
+color:#7A4A3A;
+}
+
+/* Paragraphs */
+
+main p{
+font-size:1.05rem;
+margin-bottom:22px;
+}
+
+/* ---------- Hero Image ---------- */
+
+.hero{
+width:100%;
+margin:0 0 40px 0;
+}
+
+.hero img{
+width:100%;
+height:auto;
+}
+
+/* ---------- Lists ---------- */
+
+ul{
+list-style-type:disc;
+padding-left:20px;
+margin:30px 0;
+}
+
+ul li{
+margin-bottom:10px;
+}
+
+ol{
+padding-left:20px;
+margin:30px 0;
+}
+
+ol li{
+margin-bottom:10px;
+}
+
+/* ---------- Definition List ---------- */
+
+dl{
+margin:60px 0;
+padding-left:25px;
+border-left:2px solid #8FAF9A;
+}
+
+dt{
+font-weight:700;
+margin-top:20px;
+}
+
+dd{
+margin-left:0;
+margin-bottom:15px;
+font-size:.95rem;
+}
+
+/* ---------- Content Links ---------- */
+
+main a{
+color:#8FAF9A;
+font-weight:700;
+text-decoration:none;
+border-bottom:1px solid #8FAF9A;
+}
+
+main a:hover{
+color:#C47A5A;
+border-bottom-color:#C47A5A;
+}
+
+/* ---------- Address ---------- */
+
+address{
+margin-top:80px;
+font-style:normal;
+font-size:.9rem;
+color:#7A4A3A;
+}
+
+/* ---------- Gallery ---------- */
+
+.gallery{
+display:flex;
+flex-wrap:wrap;
+gap:20px;
+justify-content:center; /* nicer layout */
+}
+
+.gallery figure{
+flex-basis:300px; /* responsive gallery */
+margin:0;
+}
+
+.gallery img{
+width:100%;
+height:auto;
+}
+
+.gallery img:hover{
+box-shadow:0px 0px 10px rgba(0,0,0,.3); /* hover shadow */
+}
+
+.gallery figcaption{
+text-align:center;
+font-size:.85rem;
+margin-top:5px;
+}
+
+/* ---------- Book Match Form ---------- */
+
+.bookform fieldset{
+border:2px solid #8FAF9A;
+margin-bottom:25px;
+padding:20px;
+border-radius:10px;
+}
+
+.bookform legend{
+font-weight:700;
+color:#C47A5A;
+padding:0 10px;
+}
+
+.bookform label{
+display:block;
+margin-bottom:15px;
+}
+
+.bookform input[type="text"],
+.bookform input[type="email"],
+.bookform input[type="tel"],
+.bookform select,
+.bookform textarea{
+width:100%;
+padding:10px;
+border:1px solid #D8CFC4;
+border-radius:8px;
+background-color:#FFFFFF;
+font-family:"Playfair Display", serif;
+}
+
+.bookform textarea{
+height:120px;
+}
+
+.bookform input[type="submit"]{
+background-color:#C47A5A;
+color:white;
+border:1px solid #3A2F2F;
+border-radius:8px;
+padding:12px 25px;
+cursor:pointer;
+}
+
+.bookform input[type="submit"]:hover{
+background-color:#8FAF9A;
+}
+
+/* Required Field Highlight */
+
+.bookform input:required,
+.bookform select:required,
+.bookform textarea:required{
+background:#FFE4D6;
+border:3px solid #C47A5A;
+}
+
+/* ---------- Footer ---------- */
+
+footer{
+margin-top:100px;
+padding:30px;
+text-align:center;
+font-size:.85rem;
+border-top:1px solid #D8CFC4;
+clear:both;
+}
